@@ -23,6 +23,10 @@ xlabel('time')
 ylabel('w')
 hold off
 
+%绘制小车y方向速度变化趋势
+plot(result.vy)
+ylabel('v_y')
+
 figure;
 %绘制小车仿真轨迹
 hold on
