@@ -23,8 +23,9 @@ plot(result.w1,'*')
 plot(result.w2,'*')
 plot(result.w3)
 plot(result.w4)
-legend('右上轮','左上轮','左下轮','右下轮')
-xlabel('time')
+title('Angular Speed of Each Wheel')
+legend('w1','w2','w3','w4')
+xlabel('time/s')
 ylabel('w')
 hold off
 %绘制小车y方向速度变化趋势
@@ -32,6 +33,7 @@ subplot(2,2,2);
 plot(result.vy)
 title('v_y')
 ylabel('v_y')
+xlabel('time/s')
 %绘制小车仿真轨迹
 subplot(2,2,3);
 plot(result.x.Data, result.y.Data);
