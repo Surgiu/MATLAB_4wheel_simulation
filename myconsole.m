@@ -18,7 +18,7 @@ plot(result.w1,'*')
 plot(result.w2,'*')
 plot(result.w3)
 plot(result.w4)
-legend('右上轮','左上轮','右下轮','左下轮')
+legend('右上轮','左上轮','左下轮','右下轮')
 xlabel('time')
 ylabel('w')
 hold off
