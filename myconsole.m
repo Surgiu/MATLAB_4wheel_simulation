@@ -36,5 +36,5 @@ axis equal; % 使x和y轴比例相同，更适合观察轨迹
 grid on;
 %绘制小车理论运行轨迹
 plot(result.x_desired.Data,result.y_desired.Data,'*');
-legend("simulated trajectory","desired trajectory")
+legend("simulated trajectory","ground truth")
 hold off
