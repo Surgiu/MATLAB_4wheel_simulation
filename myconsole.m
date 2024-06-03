@@ -55,10 +55,10 @@ hold off
 %计算停止位置的坐标
 x_end = round(result.x.Data(end),3);
 y_end = round(result.y.Data(end),3);
-%arg_end = atan(y_end/(x_end-1)) * 180 / pi;
+arg_end = round(atan(y_end/(x_end-1)) * 180 / pi,3);
 disp(["simulation end point:", x_end, y_end])
 
-%arg_truth = atan(sin(10)/(-cos(10)-1))* 180 / pi;
+arg_truth = round(atan(sin(10)/(-cos(10)))* 180 / pi,3);
 x_truth = round(1-cos(10),3);
 y_truth = round(sin(10),3);
 disp(["ground truth: ", x_truth, y_truth])
